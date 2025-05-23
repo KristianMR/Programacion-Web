@@ -8,15 +8,15 @@ more_html = """<!DOCTYPE html>
     <h2>Contáctanos</h2>
     <form id="contact-form" onsubmit="enviar(); return false;">
         <label for="name">Nombre</label>
-        <input type="text" id="name"><br>
+        <input type="text" id="name" name="name" required placeholder="Nombre"><br>
 
         <label for="email">Correo</label>
-        <input type="text" id="email"><br>
+        <input type="text" id="email" name="email" required placeholder="Correo Electronico"><br>
 
         <label for="msg">Mensaje</label>
-        <textarea id="msg"></textarea><br>
+        <textarea id="msg" name="msg" required placeholder="Dejanos tu mensaje"></textarea><br>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" aria-label="Enviar formulario de Contacto">Enviar</button>
     </form>
     <script src="contact.js"></script>
 </body>
