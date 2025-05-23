@@ -45,6 +45,8 @@ contact_js = """function enviar() {
 """
 
 # Guardar nuevos archivos
+project_path = "C:/Users/krist/OneDrive/Documentos/GitHub/Programacion-Web"
+
 with open(f"{project_path}/contact.html", "w") as f:
     f.write(more_html)
 
