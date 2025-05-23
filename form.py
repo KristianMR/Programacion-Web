@@ -23,17 +23,33 @@ more_html = """<!DOCTYPE html>
 </html>
 """
 
-contact_css = """h2 {
-    color: lime;
-    background-color: black;
+contact_css = """body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 form {
-    width: 150%;
+    width: 50%;
     padding: 50px;
 }
-label, input, textarea {
+input, textarea {
+    padding: 10px;
     display: block;
-    margin-bottom: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
 }
 """
 
